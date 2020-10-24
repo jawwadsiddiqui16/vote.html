@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #textbox
+        {
+            width: 40%;
+        }
+        button
+        {
+            color: red;
+            background-color: gray;
+        }
+
+
+    #display
+    {
+        width: 400px;
+        height: 300px;
+        background-color: greenyellow;
+    }
+    </style>
+</head>
+<body>
+  <input type="text" id="textbox" value="">         
+   <button onclick="show()">check</button>
+   <div id="display">
+
+   </div>
+   <script>
+       function show()
+       {
+
+       
+      var age=document.getElementById('textbox').value;
+      if(age>18)
+      {
+      document.getElementById('display').innerHTML="ap vote dalskte ho gud hogya"
+      }
+      else
+      {
+        document.getElementById('display').innerHTML="ap vote nh dalskte ho "
+      } 
+    }
+   </script>
+</body>
+</html>
